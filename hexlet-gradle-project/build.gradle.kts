@@ -9,6 +9,8 @@
 plugins {
     // Поддержка запуска из командной строки
     application
+    id("se.patrikerdes.use-latest-versions") version "0.2.18"
+    id("com.github.ben-manes.versions") version "0.41.0"
 }
 
 repositories {
@@ -21,4 +23,9 @@ application {
     // Входная точка
     mainClass.set("io.hexlet.example.App")
 }
+
+dependencies {
+    implementation("org.apache.commons:commons-lang3:3.13.0")
+}
+
 
